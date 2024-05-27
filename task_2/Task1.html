@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+     
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* width: 100%; */
+            /* height: 100%; */
+        }
+
+        form {
+            padding: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        form label {
+            margin-top: 10px;
+        }
+
+        form input {
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 22px);
+        }
+
+        form button {
+            margin-top: 20px;
+            padding: 10px;
+            padding-top:15px ;
+            padding-bottom:15px ;
+
+            background-color: blue;
+            color: white;
+            box-shadow: 0 0 10px rgpa(0,0,0,0.1);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .line-with-text {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .line-with-text::before,
+        .line-with-text::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .line-with-text:not(:empty)::before {
+            margin-right: .25em;
+        }
+
+        .line-with-text:not(:empty)::after {
+            margin-left: .25em;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        ul li {
+            padding-top: 1%;
+            font-size: 12px;
+            margin-left: 50px;
+        }
+         a
+        {
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="">
+            <label style="font-weight: bold; font-size: 50px;" for="">Sign in</label>
+            <br>
+            <label for="">Stay updated on your professional world</label>
+            <br>
+            <input placeholder="Email or Phone" type="text">
+            <br>
+            <input placeholder="Password" type="password" name="" id="">
+            <br>
+            <label for=""><a href="">Forget password</a></label>
+            <button type="submit">Sign in</button>
+            <br>
+            <div class="line-with-text">or</div>   
+            <button type="submit" style="background-color: white; color: black ;border: solid 1px black;"><img style="padding-right: 5px;" src="data:image/png;base64,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" width="20px" alt="apple"> Sign in with Apple</button>
+            <br>
+                <label for="" style="padding-left: 17%; padding-top: 50px; align-items: center;">New to Linkedin? <a href="">join now</a></label>
+        </form>
+
+    </div>
+    <footer>
+        <div>
+            <ul>
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwqFAdOEUrcOvggS998rLFf31bYB20NqK0UQ&s"width="60px" alt="linked in"> &copy; 2024</li>
+                <li>User Agreement</li>
+                <li>Privacy Policy</li>
+                <li>Community Guidelines</li>
+                <li>Cookie Policy</li>
+                <li>Copyright Policy</li>
+                <li>Send Feedback</li>
+                <li>Language</li>
+            </ul>
+        </div>
+    </footer>
+ 
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: green;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        form {
+            
+            background: #fff;
+            padding: 10%;
+         PADDING-RIGHT: 5%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding-top: 80px;
+            padding-right: 80px;
+            align-items: center;
+        }
+
+        form .flex label {
+            margin-top: 100px;
+        }
+
+        form .flex input {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            padding-bottom: 10;
+            border-top: 1px;
+              border-right: 1px;
+              border-left: 1px;
+                border-radius: 4px;
+            width: calc(100% - 22px);
+        }
+
+        form button {
+            margin-top: 20px;
+            padding: 15px;
+            padding-right: 4%;
+            padding-left: 4%;
+            background-color:green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+
+        }
+
+        form button:hover {
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="">
+            <div class="flex">
+                <label style="margin-left: 33%; font-weight: bold; font-size: 25px;    align-items: center;
+                text-align: center; " for="">USER LOGIN</label>
+             <label for="show-password" style="color: green;">Username</label>
+
+                <input placeholder="Email or Phone" type="email">
+                <label for="show-password" style="color: green;">Password</label>
+
+                <input placeholder="Password" type="password" name="" id="">
+                
+            </div>
+        
+                <button type="submit"   >Sign in</button>
+                <label for="show-password" style="padding-left: 33%;margin-top: 20px;">forgot Password?</label>
+
+               
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #8400cd, #b700c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sign-in-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            padding: 5%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: white;
+        }
+
+        .image-container {
+            flex: 1;
+            margin-right: 25px; 
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        #sign-in {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        #sign-in h1,
+        #sign-in p {
+            text-align: center;
+            margin: 0 0 20px;
+        }
+
+        #email-phone,
+        #password {
+            border: #e5e5e5 1px solid;
+            width: 100%;
+            padding: 10px;
+            border-radius: 24px;
+            background-color: #e5e5e5;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #1fcc44;
+            border: none;
+            color: white;
+            width: 100%;
+            border-radius: 24px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #1ea73d;
+        }
+
+        a {
+            color: #1fcc44;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sign-in-container">
+        <div class="image-container">
+            <img src="Screenshot 2024-05-23 230703.png" alt="Sign In Image">
+        </div>
+        <div id="sign-in">
+            <h1>Member Login</h1>
+            <form action="">
+                <input type="text" name="email" id="email-phone" placeholder="Email"><br>
+                <input type="password" name="password" id="password" placeholder="Password"><br>
+                <button type="submit">Sign in</button>
+                <p>Forgot <a href="#">Username</a> / <a href="#">Password</a>?</p>
+                <p><a href="#">Create your account</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

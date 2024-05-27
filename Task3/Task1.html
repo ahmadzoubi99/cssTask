@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            height: 100%;
+            background-color: #e2e2ff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        #sign-in {
+            background-color: #8c8cce;
+            max-width: fit-content;
+            margin: 10% auto;
+            width: 40%;
+            border-radius: 10px;
+            padding: 2%;
+            box-shadow: 0 0 30px rgba(140, 140, 206, 1);
+        }
+
+        #sign-in * {
+            margin: 2% 0;
+        }
+
+        #show-pass,
+        #show-pass * {
+            width: fit-content;
+        }
+
+        #sign-in h1,
+        #sign-in p {
+            text-align: center;
+        }
+
+        #email-phone,
+        #password,
+        #confirm-password {
+            border: rgb(180, 178, 178) 1px solid;
+            width: 100%;
+            padding: 4% 0;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            box-shadow: none;
+            outline: none;
+            background-color: #767676;
+            border: none;
+            color: rgb(46, 46, 46);
+            display: inline-block;
+            border-radius: 24px;
+            width: 100%;
+            font-size: large;
+        }
+
+        button:hover {
+            background-color: #6b6b6b;
+        }
+
+        #name {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #name input {
+            width: 48%;
+            padding: 4% 0;
+            border-radius: 5px;
+            border: rgb(180, 178, 178) 1px solid;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sign-in">
+        <h1>Sign Up</h1>
+        <form action="">
+            <div id="name">
+                <input type="text" id="fname" placeholder="First Name">
+                <input type="text" id="lname" placeholder="Last Name">
+            </div>
+            <input type="text" name="email or phone" id="email-phone" placeholder="Email or Phone"><br>
+            <input type="password" name="password" id="password" placeholder="Password"><br>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password"><br>
+            <label for="show-pass">
+                <input type="checkbox" name="shows-pass" id="show-pass">
+                I accept the terms of use & privacy policy
+            </label><br>
+            <button class="buttons" id="sign-in-btt">Sign Up</button>
+            <p>Already have an account? <a href="">Login here</a></p>
+            <p>Copyright © yourCompany.com</p>
+        </form>
+    </div>
+</body>
+
+</html>
