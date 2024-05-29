@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Articles</title>
+    <style>
+        body {
+            background-color: rgba(243, 26, 170, 0.867);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 2em;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .item {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .large-item {
+            grid-column: span 3;
+            text-align: justify;
+            overflow-y: scroll;
+            max-height: 200px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 900px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .large-item {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Floating Articles</h1>
+        <div class="grid-container">
+            <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum purus a justo pellentesque, quis varius arcu scelerisque. Nam eget dui ac neque.</div>
+            <div class="item">Fusce molestie, ipsum id interdum commodo, mauris dui sagittis lorem, sit amet aliquet dui nisl dapibus augue. Maecenas auctor eros sit amet.</div>
+            <div class="item">Nullam eget lacus ex. Ut commodo dolor id odio mattis lacinia. Vestibulum varius, lectus non facilisis faucibus, magna ex porttitor nisl, sit amet ultricies nisl est.</div>
+            <div class="large-item">Phasellus vitae pulvinar ipsum. Proin egestas lobortis mauris. Ut vel est vel nulla euismod pretium eu aliquet diam. Nulla ac auctor ante, volutpat pharetra nunc. Etiam nec nisl gravida, efficitur felis gravida, facilisis risus. Nunc augue sem, molestie ac congue at, auctor sit amet turpis. Nulla egestas ullamcorper auctor.</div>
+            <div class="item">Morbi commodo bibendum mattis. Vivamus commodo ex felis, quis dictum quam molestie quis. Mauris nunc felis, sagittis vel massa id, sodales semper nunc.</div>
+            <div class="item">Nullam eget lacus ex. Ut commodo dolor id odio mattis lacinia. Vestibulum varius, lectus non facilisis faucibus, magna ex porttitor nisl, sit amet ultricies nisl est.</div>
+        </div>
+    </div>
+</body>
+
+</html>

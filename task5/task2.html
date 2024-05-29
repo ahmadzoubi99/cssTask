@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Articles - External CSS Sheet!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    background-color: #ffffcc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    color: black;
+}
+
+.article {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.red-border {
+    border: 1px dashed red;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: black;
+    margin-top: 0;
+}
+
+.highlight {
+    color: yellow;
+    background-color: black;
+    padding: 2px;
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .article {
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Articles - External CSS Sheet!</h1>
+        <div class="article">
+            <h2>Heading Num. 2</h2>
+            <p>Lorem <span class="highlight">ipsum</span> dolor sit amet, consectetur adipiscing elit. Proin lacinia lorem eu porttitor luctus. Sed ac mauris vitae arcu consectetur tempor sed congue felis. Vivamus posuere scelerisque dapibus. Nam ultricies laoreet augue id semper. Sed ac lacus leo dolor volutpat ullamcorper et sed risus. Nunc sollicitudin bibendum varius. Donec laoreet gravida metus. Fusce porta consequat augue, eget fermentum lectus molestie ultricies. Etiam sit amet sem sed massa maximus eleifend. Etiam eu maximus <span class="highlight">ipsum</span>. Morbi ut venenatis mauris. Etiam vehicula nisl neque, fringilla pellentesque dui consequat <span class="highlight">quis</span>.</p>
+        </div>
+        <div class="article">
+            <h2>Heading Num. 2</h2>
+            <p>Donec nec lacus et felis scelerisque iaculis a vitae nibh. Nullam in sapien condimentum erat interdum pretium eget sit amet ex. Duis sed enim nisl. Cras ut lacus vitae metus posuere vestibulum. Proin posuere tincidunt <span class="highlight">ipsum</span> ut aliquam. Aenean lacinia urna mauris, <span class="highlight">quis</span> volutpat nulla blandit et. Nam placerat porta ornare. Nunc pretium elit et leo blandit, consectetur pretium sapien porttitor. Aenean consectetur malesuada enim, eget fringilla dolor efficitur id. Curabitur et pulvinar nulla. Sed mollis felis eget blandit venenatis.</p>
+        </div>
+        <div class="article red-border" style="color: red;">
+            <h2>Heading Num. 2</h2>
+            <p>Etiam in ex <span class="highlight">quis</span> eros hendrerit sollicitudin vitae iaculis neque. Vestibulum ornare nibh lectus, a eleifend ipsum blandit justo efficitur in. Morbi et porta erat, <span class="highlight">quis</span> tristique lorem. Nunc mollis egestas ligula id lectus dapibus sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vestibulum non augue scelerisque tincidunt. Vivamus dictum luctus neque, sed scelerisque quam faucibus vitae.</p>
+        </div>
+    </div>
+</body>
+</html>

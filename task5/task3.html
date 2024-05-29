@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: black;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.fixed-image {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 150px;
+}
+
+.fixed-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .fixed-image {
+        position: static;
+        width: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .text {
+        margin-right: 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fixed Image</h1>
+        <div class="content">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum purus a justo pellentesque, quis varius arcu scelerisque. Nam porta odio et orci placerat venenatis. Aliquam suscipit auctor ex eget malesuada. Integer habitasse platea dictumst. Pellentesque mattis laoreet nisl, at tristique ipsum venenatis at. Cras non felis ac ligula sagittis porta erat molestie sit amet. Donec faucibus euismod leo non ornare. Phasellus urna turpis, bibendum ut elementum eget, dictum vel dui. Proin ex purus, ultricies sed sollicitudin a, venenatis nec ipsum. Mauris dictum justo vitae viverra fringilla. Nam vel metus ut ligula tristique egestas sed ac tortor. Etiam vel tincidunt elit. Ut tempus fringilla elit. Maecenas pretium massa vel interdum pellentesque.</p>
+
+                <p>Fusce molestie, ipsum id interdum commodo, mauris dui sagittis lorem, sit amet aliquet dui risus in erat. Duis at justo egestas, posuere metus quis, tincidunt mauris. Phasellus ultricies lorem sit amet metus dictum, ac consequat tellus imperdiet. Aenean vel porttitor dui. Praesent id diam ut justo imperdiet pretium. Aliquam rhoncus dui eget massa bibendum, id scelerisque turpis placerat. Nam auctor nisi et elit sollicitudin, nec tristique nulla dapibus. Aenean malesuada risus nec magna vestibulum, id feugiat risus fermentum. Quisque id mi a sem aliquet dignissim. Nam a lacus nec arcu accumsan efficitur. Suspendisse interdum ex ac malesuada viverra. Curabitur fringilla lacus id erat ornare, in faucibus orci bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce elementum vitae ligula nec ultrices. Etiam malesuada gravida ligula, nec eleifend massa gravida in. Nulla consequat tortor at nisi cursus, nec euismod metus iaculis. Sed sed libero vehicula, fermentum sem a, viverra velit. Sed semper varius dui, ac interdum nisl malesuada eget. Duis pharetra ligula nec metus congue blandit. In hac habitasse platea dictumst. In suscipit justo velit, quis scelerisque risus lobortis ac. Nulla ut lorem eget sapien consequat tincidunt. Fusce id erat velit.</p>
+
+                <p>Phasellus vitae pulvinar ipsum. Proin egestas lobortis mauris. Ut vel est vel nulla euismod pretium eu aliquet diam. Nulla ac auctor ante, volutpat pharetra nunc. Etiam nec nisl gravida, efficitur felis gravida, facilisis risus. Nunc augue sem, molestie ac congue at, auctor sit amet turpis. Nulla egestas ullamcorper auctor. Vestibulum ultricies metus in risus pretium bibendum. Donec non magna non tellus volutpat fermentum. Ut nec sagittis orci. Aliquam pulvinar feugiat felis ac fermentum. Donec ex metus, interdum id nisl in, faucibus elit ultricies sed.</p>
+
+                <p>Nullam eget lacus ex. Ut commodo dolor id odio mattis lacinia. Vestibulum varius, lectus non facilisis faucibus, magna ex porttitor nisl, sit amet ultricies nisl est elementum metus. Donec condimentum turpis et ligula vulputate, a ultricies nunc venenatis. Suspendisse efficitur metus a nunc consectetur, et dignissim elit porttitor. Curabitur pretium, nunc vel maximus volutpat, lectus dolor egestas quam, id porta nisl ligula in ipsum. Nunc nec nulla velit. Quisque sagittis, urna eu mattis convallis, nibh odio efficitur arcu, in convallis mauris risus in ligula. Proin lacinia quam diam, ac luctus purus mattis a. Nunc finibus diam eget neque molestie, in convallis massa aliquet. Cras gravida turpis sed bibendum scelerisque.</p>
+
+                <p>Morbi commodo bibendum mattis. Vivamus commodo ex felis, quis dictum quam molestie quis. Mauris nunc felis, sagittis vel massa id, sodales congue nunc. Maecenas tempor nulla diam, ac fermentum purus fringilla id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat pulvinar ornare. Etiam non gravida eros.</p>
+
+                <p>Phasellus posuere, lorem id sagittis lorem, sit amet aliquet dui nisl dapibus augue. Duis vitae enim in justo feugiat consequat vel sit amet ex. Suspendisse potenti. Curabitur gravida, purus eget condimentum fringilla, nisi ante aliquam quam, at ultricies nulla ligula vitae tortor. Nam ut justo luctus, faucibus risus nec, tempor nunc. In auctor nisi nec elit fringilla, et suscipit massa cursus. Etiam ut magna in est venenatis bibendum. Pellentesque non massa nec nisl feugiat fringilla. Vivamus dictum ligula non sem egestas, sit amet efficitur nisl gravida. Curabitur ut ipsum justo. In vel venenatis dolor. Vestibulum ultricies posuere ullamcorper. Quisque id tincidunt sapien. Aenean ac diam in leo aliquam blandit. Maecenas ut convallis justo. Duis at justo in lacus posuere pharetra. Curabitur auctor justo non augue feugiat laoreet. Curabitur mollis ligula vel venenatis fermentum.</p>
+            </div>
+            <div class="fixed-image">
+                <img src="Screenshot 2024-05-29 222453.png" alt="Fixed Image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

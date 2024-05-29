@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .item {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Make images responsive */
+        @media (max-width: 900px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <img src="image/download (1).jpg" alt="" class="item">
+        <img src="image/download (2).jpg" alt="" class="item">
+        <img src="image/download (3).jpg" alt="" class="item">
+        <img src="image/download (4).jpg" alt="" class="item">
+        <img src="image/download (5).jpg" alt="" class="item">
+        <img src="image/download (6).jpg" alt="" class="item">
+        <img src="image/download (7).jpg" alt="" class="item">
+        <img src="image/download111.jpg" alt="" class="item">
+        <img src="image/images.jpg" alt="" class="item">
+    </div>
+</body>
+
+</html>

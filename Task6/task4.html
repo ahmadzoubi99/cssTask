@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 20%;
+            grid-template-rows: 15% 1fr 30%;
+            grid-template-areas:
+                "header header header"
+                "content1 content1 sidebar"
+                "footer footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: green;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content1 {
+            grid-area: content1;
+            background-color: orange;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content1"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content1">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>
